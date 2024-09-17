@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="posttest 2 nabilaaaaaa"/>
+        <attribute name="authors" value="MSI GF63"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-15 09:52:12 PM"/>
+        <attribute name="created" value="TVNJIEdGNjM7TVNJOzIwMjQtMDktMTU7MDc6MzI6NDggUE07MjAzNQ=="/>
+        <attribute name="edited" value="TVNJIEdGNjM7TVNJOzIwMjQtMDktMTU7MDk6NTI6MTIgUE07MzsyMTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namalengkap, nim" type="String" array="False" size=""/>
+            <declare name="harga" type="Integer" array="False" size=""/>
+            <declare name="diskonmawar, diskonsania, diskonmaknyus, diskonmawarhitung, hargasetelahdiskonmawar, diskonsaniahitung, hargasetelahdiskonsania, diskonmaknyushitung, hargasetelahdiskonmaknyus" type="Real" array="False" size=""/>
+            <input variable="namalengkap"/>
+            <input variable="nim"/>
+            <input variable="harga"/>
+            <assign variable="diskonmawar" expression="11/100"/>
+            <assign variable="diskonsania" expression="14/100"/>
+            <assign variable="diskonmaknyus" expression="17/100"/>
+            <assign variable="diskonmawarhitung" expression="harga * diskonmawar"/>
+            <assign variable="hargasetelahdiskonmawar" expression="harga-diskonmawarhitung"/>
+            <assign variable="diskonsaniahitung" expression="harga*diskonsania"/>
+            <assign variable="hargasetelahdiskonsania" expression="harga-diskonsaniahitung"/>
+            <assign variable="diskonmaknyushitung" expression="harga*diskonmaknyus"/>
+            <assign variable="hargasetelahdiskonmaknyus" expression="harga-diskonmaknyushitung"/>
+            <output expression="namalengkap &amp;&quot; &quot;&amp; &quot;dengan nim&quot;&amp;&quot; &quot;&amp;nim&amp;&quot; &quot;&amp;&#13;&#10;&quot;ingin membeli beras seharga Rp&quot;&amp;&quot; &quot;&amp;harga" newline="True"/>
+            <output expression="&quot;Jika ia membeli beras mawar ia harus membayar&quot; &amp;&quot; &quot;&amp; &quot;Rp&quot;&amp; hargasetelahdiskonmawar &amp;&quot; &quot;&amp; &quot;setelah mendapat diskon 11%&quot;" newline="True"/>
+            <output expression="&quot;Jika ia membeli beras sania ia harus membayar&quot; &amp;&quot; &quot;&amp; &quot;Rp&quot;&amp; hargasetelahdiskonsania &amp;&quot; &quot;&amp; &quot;setelah mendapat diskon 14%&quot;" newline="True"/>
+            <output expression="&quot;Jika ia membeli beras maknyus ia harus membayar&quot; &amp;&quot; &quot;&amp; &quot;Rp&quot;&amp; hargasetelahdiskonmaknyus &amp;&quot; &quot;&amp; &quot;setelah mendapat diskon 17%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
