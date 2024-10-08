@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowchartnabila"/>
+        <attribute name="authors" value="MSI GF63"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 08:49:25 PM"/>
+        <attribute name="created" value="TVNJIEdGNjM7TVNJOzIwMjQtMDktMDg7MTE6NDY6MTcgQU07MjAxOA=="/>
+        <attribute name="edited" value="TVNJIEdGNjM7TVNJOzIwMjQtMTAtMDg7MDg6NDk6MjUgUE07MjA7MjE5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilih1, pilih2, pilih3" type="Integer" array="False" size=""/>
+            <declare name="datahewan, users, username, password, petid, petname, pettype, petage" type="String" array="False" size=""/>
+            <output expression="&quot;MANAJEMEN PET SHOP 1. REGISTRASI 2. LOGIN 3. KELUAR&quot;" newline="True"/>
+            <output expression="&quot;Pilih (1/2/3):&quot;" newline="True"/>
+            <input variable="pilih1"/>
+            <if expression="pilih1=1">
+                <then>
+                    <output expression="&quot;Masukkan username baru:&quot;" newline="True"/>
+                    <input variable="newusername"/>
+                    <output expression="&quot;Masukkan password baru:&quot;" newline="True"/>
+                    <input variable="newpassword"/>
+                    <output expression="&quot;Registrasi berhasil untuk pengguna baru!&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="pilih1=2">
+                <then>
+                    <output expression="&quot;login&quot;" newline="True"/>
+                    <output expression="&quot;Masukkan username&quot;" newline="True"/>
+                    <input variable="username"/>
+                    <output expression="&quot;Masukkan password&quot;" newline="True"/>
+                    <input variable="password"/>
+                    <if expression="username == &quot;bilaw&quot; and password == &quot;bilaw123&quot;">
+                        <then>
+                            <output expression="&quot;Berhasil masuk sebagai bilaw&quot;" newline="True"/>
+                            <breakpoint expression="" always="True"/>
+                            <output expression="&quot;MENU ADMIN PET SHOP 1. TAMBAH HEWAN 2. TAMPILKAN HEWAN 3. UBAH HEWAN 4. HAPUS HEWAN 5. LOGOUT&quot;" newline="True"/>
+                            <output expression="&quot;Pilih (1/2/3/4/5):&quot;" newline="True"/>
+                            <input variable="pilih2"/>
+                            <if expression="pilih2=1">
+                                <then>
+                                    <output expression="&quot;Masukkan ID hewan&quot;" newline="True"/>
+                                    <input variable="petid"/>
+                                    <output expression="&quot;Masukkan nama hewan&quot;" newline="True"/>
+                                    <input variable="petname"/>
+                                    <output expression="&quot;Masukkan jenis hewan&quot;" newline="True"/>
+                                    <input variable="pettype"/>
+                                    <output expression="&quot;Masukkan umur hewan&quot;" newline="True"/>
+                                    <input variable="petage"/>
+                                    <output expression="&quot;Data hewan berhasil ditambahkan.&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                            <if expression="pilih2=2">
+                                <then>
+                                    <output expression="&quot;Data Hewan:&quot;" newline="True"/>
+                                    <output expression="&quot;ID&quot; = petid" newline="True"/>
+                                    <output expression="&quot;Nama&quot; = petname" newline="True"/>
+                                    <output expression="&quot;Jenis&quot; = pettype" newline="True"/>
+                                    <output expression="&quot;Umur&quot; = petage" newline="True"/>
+                                    <output expression="&quot;Data hewan berhasil ditambahkan.&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                            <if expression="pilih2=3">
+                                <then>
+                                    <output expression="&quot;Masukkan nomor hewan yang ingin diubah:&quot;" newline="True"/>
+                                    <input variable="petid"/>
+                                    <output expression="&quot;Masukkan nama  baru:&quot;" newline="True"/>
+                                    <input variable="petname"/>
+                                    <output expression="&quot;Masukkan jenis baru:&quot;" newline="True"/>
+                                    <input variable="pettype"/>
+                                    <output expression="&quot;Masukkan umur  baru:&quot;" newline="True"/>
+                                    <input variable="petage"/>
+                                    <output expression="&quot;Data hewan berhasil diupdate.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Nomor hewan tidak valid.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <if expression="pilih2=4">
+                                <then>
+                                    <output expression="&quot;Masukkan nomor hewan yang ingin dihapus:&quot;" newline="True"/>
+                                    <input variable="petid"/>
+                                    <output expression="&quot;Data hewan berhasil dihapus.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Nomor hewan tidak valid.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <if expression="pilih2=5">
+                                <then>
+                                    <breakpoint expression="" always="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <if expression="pilih1=3">
+                <then>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
